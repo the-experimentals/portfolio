@@ -1,0 +1,11 @@
+// .CoverPage {}
+
+.imageWrapper{
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    margin:auto;
+    box-shadow:5px 5px 10px var(--foreground);
+    background: url('../../assets/profile-image.jpeg') center no-repeat;
+    background-size: 100%;   
+}
