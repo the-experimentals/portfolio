@@ -1,8 +1,5 @@
-import { Fab, Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import styles from './page.module.scss'
-import data from './data/portfolio-data'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faAddressBook, faBars, faBriefcase, faFile, faGears, faLaptopCode} from '@fortawesome/free-solid-svg-icons'
 import CoverPage from "./components/CoverPage/CoverPage";
 import ContentPage from "./components/ContentPage/ContentPage";
 
