@@ -1,7 +1,9 @@
 import React, { FC } from 'react';
 import styles from './ContentPage.module.scss';
 import { Grid, Typography } from '@mui/material';
-import  profileImage  from '../../assets/profile-image.jpeg';
+
+import profileImage from '../../assets/profile-image.jpeg';
+import SideBar from './SideBar/SideBar';
 
 interface ContentPageProps {}
 
@@ -20,8 +22,8 @@ const ContentPage: FC<ContentPageProps> = () => (
           </Typography>
         </Grid>
     </Grid>
-    <Grid sx={{}} size="grow">
-
+    <Grid size="grow" container>
+      <SideBar />
     </Grid>
   </Grid>
 );
