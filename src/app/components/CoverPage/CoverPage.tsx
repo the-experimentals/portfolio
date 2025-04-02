@@ -3,9 +3,7 @@ import styles from './CoverPage.module.scss';
 import { Grid, Typography } from '@mui/material';
 import data from '../../data/portfolio-data'
 
-interface CoverPageProps {}
-
-const CoverPage: FC<CoverPageProps> = () => (
+const CoverPage: FC = () => (
   <Grid sx={{ width: '950px', margin: 'auto'}} container className={`centralize`}>
     <Grid size={6} sx={{padding:'1rem'}}>
       <div className={styles.imageWrapper}>

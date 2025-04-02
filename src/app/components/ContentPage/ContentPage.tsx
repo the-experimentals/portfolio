@@ -1,13 +1,10 @@
 import React, { FC } from 'react';
-import styles from './ContentPage.module.scss';
 import { Grid, Typography } from '@mui/material';
 
 import profileImage from '../../assets/profile-image.jpeg';
 import SideBar from './SideBar/SideBar';
 
-interface ContentPageProps {}
-
-const ContentPage: FC<ContentPageProps> = () => (
+const ContentPage: FC = () => (
   <Grid sx={{ height:'100%', width:'100%'}} container direction="column">
     <Grid sx={{padding:'20px 30px'}} container gap={2}>
         <Grid>

@@ -4,9 +4,7 @@ import { Grid, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faLaptopCode, faGears, faAddressBook, faFile } from '@fortawesome/free-solid-svg-icons';
 
-interface SideBarProps {}
-
-const SideBar: FC<SideBarProps> = () => (
+const SideBar: FC = () => (
   <Grid className={`${styles.sidebar}`} >
     <ul className="centralize">
       <li className={`${styles.selected}`}>
