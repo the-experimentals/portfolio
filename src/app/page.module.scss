@@ -21,6 +21,12 @@
         scroll-snap-align: start;
     }
 
+    & .pageContent{
+        max-width:1440px;
+        margin:0 auto;
+        box-shadow: 0px 0px 10px var(--foreground);
+    }
+
     & .abc{
         height: 100%;
         // border: 1px solid red;        
@@ -54,46 +60,6 @@
         }
     }
 }
-
-@media screen and (max-width > 768px){
-    
-    
-}
-
-.sidebar{
-    border:1px solid blue;
-    width: 420px;
-    position: relative;
-    
-    
-
-    & ul{
-        list-style-type: none;        
-        width: inherit;
-        padding: 1.5rem;
-
-        & li{
-            padding: 30px 30px;
-            // border:1px solid red;
-            cursor: pointer;
-            transition: all 0.5s ease-in-out;
-            border-left: 5px solid var(--background);            
-            // animation: appear linear;
-            // animation-timeline: view();
-            // animation-range: entry 0 cover 40%;
-            
-
-            &:hover{
-                background: var(--foreground);
-                color: var(--background);
-                border-left-color: var(--background);
-                
-            }
-        }
-    }
-}
-
-
 
 .floatAnimate{
     animation-name: floating;

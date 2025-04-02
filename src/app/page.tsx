@@ -9,7 +9,7 @@ export default function Home() {
       <Grid size={12}  className={styles.page}>
         <CoverPage />
       </Grid>
-      <Grid size={12} className={styles.page}>
+      <Grid size={12} className={`${styles.page} ${styles.pageContent}`}>
         <ContentPage />
       </Grid>
     </Grid>

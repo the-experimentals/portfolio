@@ -1,15 +1,15 @@
 import React, { FC } from 'react';
-import styles from './ContentPage.module.scss';
 import { Grid, Typography } from '@mui/material';
-import  profileImage  from '../../assets/profile-image.jpeg';
 
-interface ContentPageProps {}
+import profileImage from '../../assets/profile-image.jpeg';
+import SideBar from './SideBar/SideBar';
+import Image from 'next/image';
 
-const ContentPage: FC<ContentPageProps> = () => (
+const ContentPage: FC = () => (
   <Grid sx={{ height:'100%', width:'100%'}} container direction="column">
     <Grid sx={{padding:'20px 30px'}} container gap={2}>
         <Grid>
-            <img src={profileImage.src} style={{height:'70px', borderRadius:'50%', boxShadow:'5px 5px 10px var(--foreground)'}} />
+            <Image src={profileImage.src} alt='profile image' style={{height:'70px', borderRadius:'50%', boxShadow:'5px 5px 10px var(--foreground)'}} />
         </Grid>
         <Grid>
           <Typography variant="h4" fontWeight={600}>
@@ -20,8 +20,8 @@ const ContentPage: FC<ContentPageProps> = () => (
           </Typography>
         </Grid>
     </Grid>
-    <Grid sx={{}} size="grow">
-
+    <Grid size="grow" container>
+      <SideBar />
     </Grid>
   </Grid>
 );
