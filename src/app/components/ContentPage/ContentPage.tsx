@@ -6,7 +6,7 @@ import { Grid, Typography } from '@mui/material';
 import profileImage from '../../assets/profile-image.jpeg';
 import SideBar from './SideBar/SideBar';
 import { useAtom } from 'jotai';
-import { sideBarAtom } from './SideBar/atoms/SideBatAtom';
+import { sideBarAtom } from './SideBar/atoms/SideBarAtom';
 
 const ContentPage: FC = () => {
   

@@ -4,7 +4,7 @@ import { Grid, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faLaptopCode, faGears, faAddressBook, faFile } from '@fortawesome/free-solid-svg-icons';
 import { useAtom } from 'jotai';
-import { sideBarAtom } from './atoms/SideBatAtom';
+import { sideBarAtom } from './atoms/SideBarAtom';
 
 const SideBar: FC = () => {
 
