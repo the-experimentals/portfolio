@@ -13,7 +13,7 @@ const SideBar: FC = () => (
             <FontAwesomeIcon icon={faBriefcase} style={{fontSize:'2rem'}} className="centralize" />                
           </Grid>
           <Grid>
-            <Typography variant="h4">Work Experinece</Typography>
+            <Typography variant="h4">Work Experience</Typography>
           </Grid>
         </Grid>
       </li>
