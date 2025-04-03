@@ -7,6 +7,7 @@ import profileImage from '../../assets/profile-image.jpeg';
 import SideBar from './SideBar/SideBar';
 import { useAtom } from 'jotai';
 import { sideBarAtom } from './SideBar/atoms/SideBarAtom';
+import WorkExperience from './WorkExperience/WorkExperience';
 
 const ContentPage: FC = () => {
   
@@ -32,9 +33,7 @@ const ContentPage: FC = () => {
         <Grid sx={{border:'1px solid red'}} size='grow'>
           {
             sideBar.workExperience && 
-            <Typography variant="h4" fontWeight={600} sx={{padding:'20px 30px'}}>
-              Work Experience
-              </Typography>
+            <WorkExperience />
           }
         </Grid>
       </Grid>
