@@ -61,7 +61,7 @@ const SideBar: FC = () => {
           </Grid>
         </li>
         <li className={sideBar.resume ? `${styles.selected}` : ''} onClick= {() => selectPage('resume')} >
-        <Grid container gap={4} onClick= {() => selectPage('resume')} >
+        <Grid container gap={4} >
             <Grid sx={{position:'relative'}}>
               <FontAwesomeIcon icon={faFile} style={{fontSize:'2rem'}} className="centralize" />                
             </Grid>
