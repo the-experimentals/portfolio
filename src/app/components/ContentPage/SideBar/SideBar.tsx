@@ -8,10 +8,10 @@ import { defaultSideBarAtom, sideBarAtom } from './atoms/SideBarAtom';
 
 const SideBar: FC = () => {
 
-  const [sideBar, useSideBar] = useAtom(sideBarAtom);
+  const [sideBar, setSideBar] = useAtom(sideBarAtom);
 
-  function selectPage(page: string) {
-    useSideBar({
+  const selectPage = (page: string) => {
+    setSideBar({
       ...defaultSideBarAtom,
       [page]: true      
     });
