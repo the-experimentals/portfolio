@@ -4,22 +4,23 @@ import { Grid, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faLaptopCode, faGears, faAddressBook, faFile } from '@fortawesome/free-solid-svg-icons';
 import { useAtom } from 'jotai';
-import { sideBarAtom } from './atoms/SideBarAtom';
+import { defaultSideBarAtom, sideBarAtom } from './atoms/SideBarAtom';
 
 const SideBar: FC = () => {
 
   const [sideBar, useSideBar] = useAtom(sideBarAtom);
 
-  function selectPage(){
+  function selectPage(page: string) {
     useSideBar({
-      workExperience: false      
+      ...defaultSideBarAtom,
+      [page]: true      
     });
   }
 
   return (
     <Grid className={`${styles.sidebar}`} >
       <ul className="centralize">
-        <li className={`${styles.selected}`}>
+        <li className={sideBar.workExperience ? `${styles.selected}` : ''} onClick= {() => selectPage('workExperience')} >
           <Grid container gap={4}>
             <Grid sx={{position:'relative'}}>
               <FontAwesomeIcon icon={faBriefcase} style={{fontSize:'2rem'}} className="centralize" />                
@@ -29,7 +30,7 @@ const SideBar: FC = () => {
             </Grid>
           </Grid>
         </li>
-        <li onClick={selectPage}>
+        <li className={sideBar.projects ? `${styles.selected}` : ''}  onClick= {() => selectPage('projects')} >
         <Grid container gap={4}>
             <Grid sx={{position:'relative'}}>
               <FontAwesomeIcon icon={faLaptopCode} style={{fontSize:'2rem'}} className="centralize" />                
@@ -39,7 +40,7 @@ const SideBar: FC = () => {
             </Grid>
           </Grid>
         </li>
-        <li>
+        <li className={sideBar.skills ? `${styles.selected}` : ''} onClick= {() => selectPage('skills')} >
         <Grid container gap={4}>
             <Grid sx={{position:'relative'}}>
               <FontAwesomeIcon icon={faGears} style={{fontSize:'2rem'}} className="centralize" />                
@@ -49,7 +50,7 @@ const SideBar: FC = () => {
             </Grid>
           </Grid>
         </li>
-        <li>
+        <li className={sideBar.contact ? `${styles.selected}` : ''} onClick= {() => selectPage('contact')} >
         <Grid container gap={4}>
             <Grid sx={{position:'relative'}}>
               <FontAwesomeIcon icon={faAddressBook} style={{fontSize:'2rem'}} className="centralize" />                
@@ -59,8 +60,8 @@ const SideBar: FC = () => {
             </Grid>
           </Grid>
         </li>
-        <li>
-        <Grid container gap={4}>
+        <li className={sideBar.resume ? `${styles.selected}` : ''} onClick= {() => selectPage('resume')} >
+        <Grid container gap={4} onClick= {() => selectPage('resume')} >
             <Grid sx={{position:'relative'}}>
               <FontAwesomeIcon icon={faFile} style={{fontSize:'2rem'}} className="centralize" />                
             </Grid>
