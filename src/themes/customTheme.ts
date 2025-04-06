@@ -2,19 +2,10 @@ import { createTheme } from "@mui/material";
 import customLightPalette from "./customLightPalette";
 import customDarkPalette from "./customDarkPalette";
 
-const customTheme = (isLightTheme?:boolean) =>{
+const customTheme = (prefersDarkMode?:boolean) =>{
 
     return createTheme({
-        palette: isLightTheme ? customLightPalette : customDarkPalette,
-        components: {
-            MuiCssBaseline:{
-                styleOverrides:({ palette }) => {
-                    return `html {
-                        background-color: ${palette.primary.dark};
-                        }`
-                }
-            }
-        }
+        palette: prefersDarkMode ? customDarkPalette : customLightPalette,        
     })
 }
 
