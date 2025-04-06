@@ -12,7 +12,7 @@ const Root = () => {
   
   return (
     <StrictMode>
-      <ThemeProvider theme={() => customTheme(prefersDarkMode)}>
+      <ThemeProvider theme={customTheme(prefersDarkMode)}>
         <CssBaseline enableColorScheme />
         <App />
       </ThemeProvider>
