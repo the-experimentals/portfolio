@@ -3,9 +3,9 @@
     "verbose": true,
     "moduleNameMapper": {
       "src/(.*)": "<rootDir>/src/$1",
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|scss|less)$": "<rootDir>/__mocks__/styleMock.js",
-      "(assets|models|services)": "<rootDir>/__mocks__/fileMock.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transformer-svg",
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy",
+      "(assets|models|services)": "identity-obj-proxy"
     },
     "modulePaths": ["<rootDir>"],
     "setupFilesAfterEnv": ["<rootDir>/src/setupTests.ts"]
