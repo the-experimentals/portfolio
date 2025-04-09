@@ -1,8 +1,12 @@
+import { Grid } from "@mui/material"
+import CoverPage from "./components/CoverPage/CoverPage"
+import styles from './App.module.scss'
+
 const App = () => {
   return(
-    <div>
-      
-    </div>
+    <Grid container className={`max-supported-width ${styles.portfolio}`}>
+      <CoverPage/>
+    </Grid>
   )
 }
 
