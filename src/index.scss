@@ -1,3 +1,19 @@
 html, body{
     transition: all 0.5s ease;
 }
+
+html, body, #root{
+    height: 100%;
+}
+
+.max-supported-width{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.centralize{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
