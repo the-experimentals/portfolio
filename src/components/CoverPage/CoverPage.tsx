@@ -8,13 +8,14 @@ const CoverPage: FC = () => {
   const theme = useTheme()
 
   return(
-    <Grid size="grow" container className={`${styles.CoverPage}`} sx={{
+    <Grid container className={`${styles.CoverPage}`} sx={{
       "--primary-color": theme.palette.primary.main,
-    }}>
+    }}
+    data-testid='CoverPage'>
       <Grid container className={`centralize ${styles.coverPaheRow}`}>
         <div>
           <div className={`centralize`}>
-            <div className={`${styles.profileImage}`} />                          
+            <div className={`${styles.profileImage}`} data-testid="profile-image" />                          
           </div>
           <div className={`${styles.profileSummaryCover}`}>
             <div className={`${styles.profileSummary}`}>
