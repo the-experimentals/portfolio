@@ -12,7 +12,7 @@ const CoverPage: FC = () => {
       "--primary-color": theme.palette.primary.main,
     }}
     data-testid='CoverPage'>
-      <Grid container className={`centralize ${styles.coverPaheRow}`}>
+      <Grid container className={`centralize ${styles.coverPageRow}`}>
         <div>
           <div className={`centralize`}>
             <div className={`${styles.profileImage}`} data-testid="profile-image" />                          
