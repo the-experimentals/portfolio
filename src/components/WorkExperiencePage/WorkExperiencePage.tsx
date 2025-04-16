@@ -4,7 +4,7 @@ import { Box, Grid, Typography, useTheme } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faLaptopCode, faStore } from '@fortawesome/free-solid-svg-icons';
 
-const WorkExperiencePage: FC = () => {
+export const WorkExperiencePage: FC = () => {
 
   const theme = useTheme()
 
@@ -191,5 +191,3 @@ const WorkExperiencePage: FC = () => {
   </Grid>
   )
 }
-
-export default WorkExperiencePage;

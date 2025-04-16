@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import CoverPage from './CoverPage';
+import {CoverPage} from './CoverPage';
 import { ThemeProvider } from '@mui/material';
 import customTheme from '../../themes/customTheme';
 

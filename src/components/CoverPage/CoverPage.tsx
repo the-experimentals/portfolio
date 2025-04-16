@@ -3,7 +3,7 @@ import styles from './CoverPage.module.scss';
 import { Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-const CoverPage: FC = () => {
+export const CoverPage: FC = () => {
   
   const theme = useTheme()
 
@@ -37,6 +37,4 @@ ultimate aim is always to build trusted systems with real value.</Typography>
       </Grid>
     </Grid>
   )
-};  
-
-export default CoverPage;
+};
