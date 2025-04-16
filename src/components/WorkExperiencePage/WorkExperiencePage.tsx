@@ -50,7 +50,7 @@ const WorkExperiencePage: FC = () => {
             <li>Developed multiple frontend applications, re-usable components using Angular (8+), React, RxJS, Observables, TypeScript, JavaScript (ES6+).</li>
             <li>Developed UI/UX components using HTML5, CSS3(Bootstrap, Material UI and Animate.css) and CSS preprocessors such as SCSS.</li>
             <li>Deployed Azure Pipelines templates for CI/CD to automate deployment on Azure Kubernetes Services (AKS).</li>
-            <li>Created various Kubernetes resources. yml(s) templates for services to be-deployed on Kubernetes cluster.</li>
+            <li>Created various Kubernetes YAML templates for deploying services to a Kubernetes cluster.</li>
             <li>Used Helm deployment tool for automating creation, packaging, configuration and deployment of applications and services to Kubernetes cluster.</li>            
           </ul>
         </li>
