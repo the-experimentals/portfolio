@@ -1,5 +1,5 @@
 import reactIcon from './react.svg';
-import typescriptIcon from './typescript.svg';
+import typescriptIcon from './type-script.svg';
 import muiIcon from './material-ui.svg';
 import jestIcon from './jest.svg';
 import springIcon from './spring.svg';
