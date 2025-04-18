@@ -1,0 +1,25 @@
+.ProjectsPage {
+    padding: 50px 60px;
+
+    & .projectCard{
+
+        & .techBox{
+            margin-top:1rem;
+            padding:0;
+
+            & .techIcon{
+                display:inline-block;
+                width:60px;
+                height:60px;
+                padding:0.5rem;
+            }
+        }
+        
+        &:hover{
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 40px;
+            border-bottom: 5px solid;
+        }
+    }
+}

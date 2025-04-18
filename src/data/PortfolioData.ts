@@ -1,5 +1,6 @@
 import { faBuilding, faLaptopCode, faStore } from "@fortawesome/free-solid-svg-icons";
 import { Portfolio } from "./Portfolio";
+import { angularIcon, dotnetIcon, gradleIcon, javaIcon, jestIcon, kotlinIcon, muiIcon, reactIcon, springIcon, typescriptIcon } from "../assets/tech-icons";
 
 export const PORTFOLIO_DATA: Portfolio = {
     name:'Bibek Saini',
@@ -108,5 +109,141 @@ export const PORTFOLIO_DATA: Portfolio = {
             "Documented various sections of the application on Confluence for use in onboarding and training new hires."
         ],
         icon: faBuilding
+    }],
+    projects:[{
+        title: 'PosePoints',
+        subtitle:'React, SpringBoot and Kotlin.',
+        description:"PosePoints is a responsive web-based application designed to efficiently manage national-level Yoga competitions in Indian states like Haryana, handling participant registration, scoring, and event coordination.",
+        avatar: 'PP',
+        technologies: [
+            {
+                tooltip: "React",
+                icon: reactIcon
+            }, {
+                tooltip:"TypeScript",
+                icon: typescriptIcon
+            },
+            {
+                tooltip:'Material UI (MUI)',
+                icon: muiIcon
+            },{
+                tooltip:'Jest',
+                icon: jestIcon
+            },
+            {
+                tooltip:'SpringBoot',
+                icon: springIcon
+            },{
+                tooltip:'Kotlin',
+                icon: kotlinIcon
+            }
+        ],
+    }, {
+        title: 'Custom Gradle Plugins',
+        subtitle:'Gradle API and Kotlin.',
+        avatar:'CGP',
+        description:'An assortment of Gradle plugins customized to configure essential plugins, dependencies, and standard project settings required across multiple projects.',
+        technologies:[{
+            tooltip:'Gradle',
+            icon: gradleIcon
+        }, {
+            tooltip:'Kotlin',
+            icon: kotlinIcon
+        }]
+    }, {
+        title:'Project Generator (code as automation)',
+        subtitle:'Gradle API and Kotlin.',
+        avatar:'PG',
+        description:'A custom Gradle plugin with dynamic code generation capabilities to automatically generate boilerplate and repetitive code, streamlining project development.',
+        technologies:[{
+            tooltip:'Gradle',
+            icon: gradleIcon
+        }, {
+            tooltip:'Kotlin',
+            icon: kotlinIcon
+        }]
+    }, {
+        title:'Custom SpringBoot Starters',
+        subtitle:'SpringBoot and Kotlin.',
+        avatar:'CSS',
+        description:'Collection of BOMs, libraries and SpringBoot Starters to provide consistent dependency alignment and configuration conventions across microservices projects to build bootiful services.',
+        technologies:[{
+            tooltip:'SpringBoot',
+            icon: springIcon
+        }, {
+            tooltip:'Kotlin',
+            icon: kotlinIcon
+        }]
+    }, {
+        title: 'Notification Service',
+        subtitle:'SpringBoot and Java.',
+        avatar:'NS',
+        description:'Micro-service providing email and sms notification capabilities. Implements JMS and Azure Service Bus.',
+        technologies:[
+            {
+                tooltip:'SpringBoot',
+                icon: springIcon
+            }, {
+                tooltip:'Java',
+                icon: javaIcon
+            }
+        ]
+    }, {
+        title:'Pending Task Service',
+        subtitle:'SpringBoot and Java.',
+        avatar:'PTS',
+        description:'Pending task service collects various task information from different services in micro-services architecture and helps in presenting it in singular form.',
+        technologies:[{
+            tooltip:'SpringBoot',
+            icon: springIcon
+        }, {
+            tooltip:'Java',
+            icon: javaIcon
+        }]
+    },{
+        title: 'Task manager',
+        subtitle:'Micro-services.',
+        avatar:'TM',
+        description:"Built on micro-services architecture this application provides management services like Invoice Manager and Task Board which allow users to manage their task and help organization's digitize their invoice generation system. The whole project is divided into various micro-apps based on their individual responsibility that each micro app need to perform, which are deployed on Azure Kubernetes Services.",
+        technologies:[
+            {
+                tooltip:'Angular',
+                icon: angularIcon
+            },
+            {
+                tooltip:'React',
+                icon: reactIcon
+            },{
+                tooltip: 'DotNet',
+                icon: dotnetIcon
+            }
+        ]
+    },{
+        title:'Mailer',
+        subtitle:'Angular',
+        avatar:'M',
+        description:"Mailer app is built on angular framewrok providing mail viewing experience. The project is built as SPA where content is refreshed and their state is maintained. App has state management implemented using datorama/akita.",
+        technologies:[{
+            tooltip:'Angular',
+            icon: angularIcon
+        },{
+            tooltip:'TypeScript',
+            icon: typescriptIcon
+        }]
+    },{
+        title:'Music Store',
+        subtitle:'ASP.NET MVC.',
+        avatar:'MS',
+        description: "Music Store Web App let users access their favourite music albums and listen them over the internet. User's can create personalized playlist, add album or songs to their favourites",
+        technologies:[]
+    }, {
+        title: 'Workflows',
+        subtitle: 'Java EE.',
+        avatar: 'W',
+        description: 'Workflows modules help organizations to manage their tasks which occurs in particular order. With workflows organizations can design the flow with various pre-defined task.',
+        technologies:[{
+            tooltip:'Java EE',
+            icon: javaIcon
+        }]
     }]
 }
