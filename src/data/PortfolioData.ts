@@ -222,7 +222,7 @@ export const PORTFOLIO_DATA: Portfolio = {
         title:'Mailer',
         subtitle:'Angular',
         avatar:'M',
-        description:"Mailer app is built on angular framewrok providing mail viewing experience. The project is built as SPA where content is refreshed and their state is maintained. App has state management implemented using datorama/akita.",
+        description:"Mailer app is built on Angular framework providing mail viewing experience. The project is built as SPA where content is refreshed and their state is maintained. App has state management implemented using datorama/akita.",
         technologies:[{
             tooltip:'Angular',
             icon: angularIcon
