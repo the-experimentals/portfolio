@@ -1,9 +1,7 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import styles from './SkillsPage.module.scss';
 
-interface SkillsPageProps {}
-
-const SkillsPage: FC<SkillsPageProps> = () => (
+const SkillsPage: FC = () => (
   <div className={styles.SkillsPage} data-testid="SkillsPage">
     SkillsPage Component
   </div>
