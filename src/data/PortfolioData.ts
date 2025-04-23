@@ -1,6 +1,6 @@
 import { faBuilding, faLaptopCode, faStore } from "@fortawesome/free-solid-svg-icons";
 import { Portfolio } from "./Portfolio";
-import { angularIcon, dotnetIcon, gradleIcon, javaIcon, jestIcon, kotlinIcon, muiIcon, reactIcon, springIcon, typescriptIcon } from "../assets/tech-icons";
+import { akitaIcon, angularIcon, apachemavenIcon, aspnetIcon, atomIcon, azureaksIcon, azureIcon, azurepipelineIcon, bitbucketIcon, bootstrapIcon, confluenceIcon, consulIcon, csharpIcon, cssIcon, digitaloceanIcon, dockerIcon, dotnetIcon, eclipseIcon, fontawesomeIcon, githubactionsIcon, githubIcon, gitIcon, gitkarakenIcon, gradleIcon, helmIcon, htmlIcon, intellijIcon, istioIcon, javaIcon, javascriptIcon, jestIcon, jiraIcon, jotaiIcon, junitIcon, kotlinIcon, ktorIcon, kubernetesIcon, mongodbIcon, mssqlserverIcon, muiIcon, nginxIcon, nodejsIcon, npmIcon, ocelotIcon, openapiIcon, postmanIcon, reactIcon, riderIcon, sassIcon, sourcetreeIcon, springIcon, sqlIcon, swaggerIcon, typescriptIcon, visualstudiocodeIcon, visualstudioIcon, vitejsIcon } from "../assets/tech-icons";
 
 export const PORTFOLIO_DATA: Portfolio = {
     name:'Bibek Saini',
@@ -244,6 +244,210 @@ export const PORTFOLIO_DATA: Portfolio = {
         technologies:[{
             tooltip:'Java EE',
             icon: javaIcon
+        }]
+    }],
+    skills:[{
+        title:'Frontend',
+        description:'Frontend development is the practice of creating the visual and interactive elements of a website or application that users directly engage with. It involves using languages like HTML, CSS, and JavaScript to build user interfaces, ensuring they are responsive and visually appealing.',
+        skills:[{
+            tooltip:'React',
+            icon: reactIcon
+        }, {
+            tooltip: 'Angular',
+            icon: angularIcon
+        }, {
+            tooltip:'TypeScript',
+            icon: typescriptIcon
+        }, {
+            tooltip:'JavaScript',
+            icon: javascriptIcon
+        }, {
+            tooltip:'Jest',
+            icon: jestIcon
+        }, {
+            tooltip:'HTML5',
+            icon: htmlIcon
+        }, {
+            tooltip:'CSS3',
+            icon: cssIcon
+        }, {
+            tooltip:'Bootstrap',
+            icon: bootstrapIcon
+        }, {
+            tooltip:'Material UI (MUI)',
+            icon: muiIcon
+        }, {
+            tooltip:'Node.js',
+            icon: nodejsIcon
+        }, {
+            tooltip:'NPM',
+            icon: npmIcon
+        }, {
+            tooltip:'Vite.js'
+            , icon: vitejsIcon
+        }, {
+            tooltip:'NGINX',
+            icon: nginxIcon
+        }, {
+            tooltip:'SASS',
+            icon: sassIcon
+        }, {
+            tooltip:'Akita',
+            icon: akitaIcon
+        }, {
+            tooltip:'Jotai',
+            icon: jotaiIcon
+        }, {
+            tooltip:'Font Awesome',
+            icon: fontawesomeIcon
+        },]
+    }, {
+        title:'Backend',
+        description:'Backend development is the server-side part of web development that focuses on databases, server logic, and application architecture. It involves using programming languages and frameworks to build the core functionality of a website or application.',
+        skills:[{
+            tooltip:'DOTNET',
+            icon: dotnetIcon
+        }, {
+            tooltip:'Java',
+            icon: javaIcon
+        }, {
+            tooltip:'C# (CSharp)',
+            icon: csharpIcon
+        }, {
+            tooltip:'Kotlin',
+            icon: kotlinIcon
+        }, {
+            tooltip:'Spring Boot',
+            icon: springIcon
+        }, {
+            tooltip: 'ASP.NET',
+            icon: aspnetIcon
+        }, {
+            tooltip:'Ktor',
+            icon: ktorIcon
+        }, {
+            tooltip:'Gradle',
+            icon: gradleIcon
+        }, {
+            tooltip:'Apache Maven',
+            icon: apachemavenIcon
+        }, {
+            tooltip:'JUnit',
+            icon: junitIcon
+        }, {
+            tooltip:'Swagger UI (Open API)',
+            icon: swaggerIcon
+        }, {
+            tooltip:'Open API',
+            icon: openapiIcon
+        }]
+    }, {
+        title:'Database Tools',
+        description:'Database tools are software applications that help manage, manipulate, and analyze data stored in databases. They provide functionalities for querying, reporting, and visualizing data, as well as for database design and administration.',
+        'skills':[{
+            tooltip:'SQL',
+            icon: sqlIcon
+        }, {
+            tooltip: 'Microsoft SQL Server',
+            icon: mssqlserverIcon
+        }, {
+            tooltip:'MongoDB',
+            icon: mongodbIcon
+        }]
+    }, {
+        title:'Deployment',
+        description:'Deployment is the process of making a software application available for use. It involves transferring the application from a development environment to a production environment, ensuring it runs smoothly and efficiently.',
+        skills:[{
+            tooltip:'Azure',
+            icon: azureIcon
+        }, {
+            tooltip: 'Digital Ocean',
+            icon: digitaloceanIcon
+        }, {
+            tooltip:'Docker',
+            icon: dockerIcon
+        }, {
+            tooltip:'Kubernetes',
+            icon: kubernetesIcon
+        }, {
+            tooltip:'Azure Kubernetes Services (AKS)',
+            icon: azureaksIcon
+        } ,{
+            tooltip:'Helm',
+            icon: helmIcon
+        }, {
+            tooltip:'GitHub Actions',
+            icon: githubactionsIcon
+        }, {
+            tooltip:'Azure Pipelines',
+            icon: azurepipelineIcon
+        }]
+    },{
+        title:'Version Control',
+        description:'Version control is a system that records changes to files or sets of files over time so that you can recall specific versions later. It is essential for tracking changes, collaborating with others, and maintaining a history of project development.',
+        skills:[{
+            tooltip:'Git',
+            icon: gitIcon
+        }, {
+            tooltip:'GitHub',
+            icon: githubIcon
+        },{
+            tooltip:'Bitbucket',
+            icon: bitbucketIcon
+        },{
+            tooltip:'SourceTree',
+            icon: sourcetreeIcon
+        }, {
+            tooltip:'GitKraken',
+            icon: gitkarakenIcon
+        }]
+    }, {
+        title:'IDEs',
+        description:'Integrated Development Environments (IDEs) are software applications that provide comprehensive facilities to programmers for software development. They typically include a code editor, debugger, and build automation tools.',
+        skills:[
+            {
+                tooltip:'Eclipse IDE',
+                icon: eclipseIcon
+            }, {
+                tooltip:'IntelliJ IDEA',
+                icon: intellijIcon
+            },
+            {
+                tooltip:'Rider IDE',
+                icon: riderIcon
+            },
+            {
+                tooltip:'Visual Studio Code (VS Code)',
+                icon: visualstudiocodeIcon
+            }, {
+                tooltip:'Visual Studio',
+                icon: visualstudioIcon
+            }, {
+                tooltip:'Atom IDE',
+                icon: atomIcon
+            }
+        ]
+    } ,{
+        title:'Others',
+        description:'Other tools and technologies that are not categorized in the above sections.',
+        skills:[{
+            tooltip:'Consul',
+            icon: consulIcon
+        }, {
+            tooltip:'Istio',
+            icon: istioIcon
+        }, {
+            tooltip:'Ocelot API Gateway',
+            icon: ocelotIcon
+        } ,{
+            tooltip:'Jira',
+            icon: jiraIcon
+        }, {
+            tooltip:'Confluence',
+            icon: confluenceIcon
+        },{
+            tooltip:'Postman',
+            icon: postmanIcon
         }]
     }]
 }
