@@ -5,8 +5,6 @@ import contactmeCover from '../../assets/contact-me.svg';
 import profileImage from '../../assets/profile-image.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-// import pdfIcon from '../../assets/pdf.svg';
-// import wordIcon from '../../assets/word.svg';
 
 const ContactsPage: FC = () => {
 
