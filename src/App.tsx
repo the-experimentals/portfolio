@@ -2,6 +2,7 @@ import { Grid, Typography } from "@mui/material"
 import styles from './App.module.scss'
 import { WorkExperiencePage, CoverPage, ProjectsPage } from "./components"
 import SkillsPage from "./components/SkillsPage/SkillsPage"
+import ContactsPage from "./components/ContactsPage/ContactsPage"
 
 const App = () => {
   return(
@@ -10,6 +11,7 @@ const App = () => {
       <WorkExperiencePage/>      
       <ProjectsPage/>
       <SkillsPage/>
+      <ContactsPage/>
       <Grid size={12} sx={{padding:'20px 30px'}}>
         <Typography variant="subtitle2" component="h1" sx={{textAlign:'center'}}>
           &copy; {new Date().getFullYear()}  - All rights reserved.
