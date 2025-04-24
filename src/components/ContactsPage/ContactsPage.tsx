@@ -81,8 +81,7 @@ const ContactsPage: FC = () => {
           I'll try my best to get back to you.
         </Typography>
         <Typography variant="h6" className={styles.subTitle} fontWeight={400} sx={{ marginTop: '20px'}}>
-          Looking forward to hear from you!
-        </Typography>        
+          Looking forward to hearing from you!
       </Grid>
 
       <Grid size={12} container className={styles.profileCardCover}>
