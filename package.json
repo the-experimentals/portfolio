@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://the-experimentals.github.io/portfolio/",
+  "homepage": "https://.v2.itsbibeksaini.com",
   "scripts": {
     "dev": "vite --open",
     "build": "tsc -b && vite build",
