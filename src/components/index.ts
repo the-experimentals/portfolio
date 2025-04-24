@@ -1,3 +1,5 @@
 export { CoverPage } from './CoverPage/CoverPage'
 export { WorkExperiencePage } from './WorkExperiencePage/WorkExperiencePage'
 export { ProjectsPage } from './ProjectsPage/ProjectsPage'
+export { SkillsPage } from './SkillsPage/SkillsPage'
+export { ContactsPage } from './ContactsPage/ContactsPage'
