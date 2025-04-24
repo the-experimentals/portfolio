@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import SkillsPage from './SkillsPage';
+import {SkillsPage} from './SkillsPage';
 
 describe('<SkillsPage />', () => {
   test('it should mount', () => {

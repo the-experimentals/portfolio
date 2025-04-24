@@ -6,7 +6,7 @@ import profileImage from '../../assets/profile-image.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const ContactsPage: FC = () => {
+export const ContactsPage: FC = () => {
 
   const theme = useTheme();
 
@@ -171,5 +171,3 @@ const ContactsPage: FC = () => {
     </Grid>
   )
 }
-
-export default ContactsPage;

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import ContactsPage from './ContactsPage';
+import {ContactsPage} from './ContactsPage';
 
 describe('<ContactsPage />', () => {
   test('it should mount', () => {
