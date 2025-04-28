@@ -21,7 +21,7 @@ export const ProjectsPage: FC = () => {
       {
         PORTFOLIO_DATA.projects.map((project, index) => {
           return(
-            <Grid size={4} sx={{ padding:'1rem'}} key={index}>
+            <Grid size={4} key={index} className={`${styles.projectCardCover}`}>
               <Card className={`${styles.projectCard}`}>
                 <CardHeader title={project.title} subheader={project.subtitle} avatar={
                   <Avatar>{project.avatar}</Avatar>
