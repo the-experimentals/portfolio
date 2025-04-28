@@ -8,4 +8,5 @@ export interface WorkExperience {
     mode: string,
     description: string[],
     icon: IconProp,
+    location: string,
 }

@@ -29,16 +29,17 @@ export const WorkExperiencePage: FC = () => {
                 </div>
 
                 <Grid container className={`${styles.eventBanner}`}>
-                  <Grid>
+                  <Grid className={`${styles.eventBannerText}`}>
                     <Typography variant="h4">{work.company}</Typography>
                     <Typography variant="subtitle1">{work.position}</Typography>
+                    <Typography variant="subtitle1">{work.location}</Typography>
                   </Grid>      
 
-                  <Grid sx={{textAlign:'right', position:'relative'}} size='grow'>
-                    <Box className={`vertical-center`} sx={{right:'0'}}>
+                  <Grid size='grow' className={`${styles.eventBannerDate}`}>
+                    <Box className={`${styles.eventBannerDateText}`}>
                       <Typography variant="body1">{work.startDate} - {work.endDate}</Typography>
                       <Typography variant="body1">{work.mode}</Typography>
-                    </Box>
+                    </Box>                    
                   </Grid>            
                 </Grid>
 

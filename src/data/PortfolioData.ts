@@ -16,6 +16,7 @@ export const PORTFOLIO_DATA: Portfolio = {
         startDate:'08/2023',
         endDate:'Present',
         mode:'Part-time',
+        location:'Remote (Canada)',
         description:[
             "Created as well and re-structured/re-invented multiple micro-service application using SpringBoot, ASP.NET as backend framework along with Java, Kotlin, C#.NET as backend languages to write business logic respectively.",
             "Designed RESTful APIs using REST patterns and used Swagger UI (Open API) to generate API documentation.",
@@ -37,6 +38,7 @@ export const PORTFOLIO_DATA: Portfolio = {
         startDate:"07/2023",
         endDate:"Present",
         mode:"Part-time",
+        location:"London ON, Canada",
         description:[
             "Manage daily functions of store personnel (cashiers, stockers, sales assistants).",
             "Train new employees and monitor performance of existing team members.",
@@ -57,6 +59,7 @@ export const PORTFOLIO_DATA: Portfolio = {
         startDate:'12/2020',
         endDate:'03/2023',
         mode:'Full-time',
+        location:'Mohali Punjab, India',
         description:[
             "Developed Gradle command-line tasks to automate the generation of new Spring Boot projects along with custom code files using the Gradle API and Kotlin.",
             "Created custom Gradle plugins to encapsulate and centralize common build logic used by multiple microservices, leveraging the Gradle API and Kotlin.",
@@ -75,6 +78,7 @@ export const PORTFOLIO_DATA: Portfolio = {
         startDate:'05/2018',
         endDate:'12/2020',
         mode:'Full-time',
+        location:'Mohali Punjab, India',
         description:[
             "Developed Candidate API backend to enable CatalystOne application integration with third-party platforms like ReachMee.",
             "Designed and implemented an Invoice Manager to help clients digitize invoice generation and manage sales data.",
@@ -89,6 +93,7 @@ export const PORTFOLIO_DATA: Portfolio = {
         startDate:'07/2016',
         endDate:'05/2018',
         mode:'Full-time',
+        location:'Mohali Punjab, India',
         description:[
             "Implemented support for multiple role profiles in the workflows module, allowing users to assign tasks to their different profiles.",
             "Developed a new date calculation mechanism that converts entered days into task deadline dates based on start date, enabling more flexible deadline management.",
@@ -103,6 +108,7 @@ export const PORTFOLIO_DATA: Portfolio = {
         startDate:'04/2016',
         endDate:'07/2016',
         mode:'Full-time',
+        location:'Mohali Punjab, India',
         description:[
             "Designed and implemented a Rewards and Recognition (R&R) module to boost employee motivation and encourage high achievement.",
             "Fixed bugs reported by testers to improve application stability and performance.",

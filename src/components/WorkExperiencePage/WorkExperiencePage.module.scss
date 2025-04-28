@@ -23,12 +23,36 @@
             position: relative;
             padding: 1rem;            
             transition: all 0.5s ease-in-out;
-            margin-left: 0.5rem;
+            margin-left: 0.7rem;
+
+            & .eventBanner{
+                margin-bottom: 1rem;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                padding: 0.5rem;
+                border-radius: 0.25rem;
+                
+                & .eventBannerText{
+                }
+
+                & .eventBannerDate{                    
+                    text-align:right;
+                    position:relative;
+                    border: transparent 1px solid;
+
+                    & .eventBannerDateText{
+                        position: absolute;
+                        
+                        top: 50%;
+                        transform: translatey(-50%);
+                        right: 0;
+                    }
+                }
+            }
 
             & .eventIcon{                
                 font-size: 1.5rem;
                 position: absolute;
-                left: -2.2rem;        
+                left: -2.4rem;        
                 top: 2.5rem;
                 width: 30px;
                 text-align: center;
@@ -51,9 +75,8 @@
             & .eventList{
                 margin-top: 1rem;
                 padding: 0;
-                list-style-type: none;                
-                padding-left: 0.5rem;
-                line-height: 1.7rem;
+                list-style-type: none;                                
+                line-height: 1.7rem;                
                 
                 & li{
                     position: relative;
@@ -61,7 +84,7 @@
                         content: '-';
                         font-size: 2rem;
                         position: absolute;
-                        margin-left: -3.10rem;        
+                        margin-left: -2.8rem;        
                         }
                 }
             }
@@ -72,4 +95,75 @@
             }
         }
     }
+}
+
+@media screen  and (max-width: 768px) {
+    .WorkExperiencePage{
+        margin-top: 6rem;
+        padding: 10px;
+
+        & .timeline{
+            margin: 1rem;
+            margin-top: 2rem;
+            margin-left: 0.7rem;
+            padding: 5px;           
+            padding-top: 0.5rem;
+            padding-left: 0.75rem;
+            font-size: 0.9em;   
+            line-height: 1.2em;
+
+            & .event{                        
+                padding: 0.5rem;            
+                margin-left: 0.25rem;
+
+                & .eventBanner{
+                    
+
+                    & .eventBannerText{
+                        width: 100%;                        
+                    }
+
+                    & .eventBannerDate{
+                        width: 100%;                        
+                        text-align: left;
+                        
+                        & .eventBannerDateText{
+                            margin-top: 1rem;
+                            position: relative;
+                            top: 0;
+                            transform: none;
+                        }
+                    }
+                }
+
+                & .eventIcon{                
+                    font-size: 1.2rem;
+                    left: -1.8rem;        
+                    top: 1.5rem;
+                    width: 20px;
+                }
+
+                & .eventList{
+                    margin-top: 0.5rem;
+                    padding-left: 0.25rem;
+                    line-height: 1.7rem;
+                    
+                    & li{
+                        position: relative;
+                        &:before{                            
+                            margin-left: -2.2rem;        
+                            
+                        }
+                        
+                        &:not(:last-of-type){
+                            margin-bottom: 1rem;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+    
 }
