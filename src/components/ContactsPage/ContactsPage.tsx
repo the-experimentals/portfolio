@@ -71,7 +71,7 @@ export const ContactsPage: FC = () => {
       </header>
 
       <Grid size={12} className={styles.contactCover}>
-        <img src={contactmeCover} style={{width:'900px'}} />
+        <img src={contactmeCover}/>
         <Typography variant="h6" className={styles.subTitle} fontWeight={400}>
           Have some questions or just want to say hi? You can either text me or send me an e-mail,
         </Typography>
