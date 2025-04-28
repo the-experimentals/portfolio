@@ -87,7 +87,7 @@
           
             & .profileImageCover{        
                 position: relative;        
-                top: 0;
+                top: 1rem;
                 left: 0;
                 transform: none;
                 & .profileImage{
@@ -98,7 +98,7 @@
 
             & .profileSummaryCover{
                 position: relative;
-                top: 0;
+                top: 3rem;
                 transform: none;
                 width: 100%;
                 margin-top: 2rem;                
