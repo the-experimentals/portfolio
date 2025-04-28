@@ -1,8 +1,6 @@
 import { Grid, Typography } from "@mui/material"
 import styles from './App.module.scss'
-import { WorkExperiencePage, CoverPage, ProjectsPage } from "./components"
-import SkillsPage from "./components/SkillsPage/SkillsPage"
-import ContactsPage from "./components/ContactsPage/ContactsPage"
+import { WorkExperiencePage, CoverPage, ProjectsPage, SkillsPage, ContactsPage } from "./components"
 
 const App = () => {
   return(

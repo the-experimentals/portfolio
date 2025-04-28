@@ -6,7 +6,7 @@ import profileImage from '../../assets/profile-image.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const ContactsPage: FC = () => {
+export const ContactsPage: FC = () => {
 
   const theme = useTheme();
 
@@ -71,7 +71,7 @@ const ContactsPage: FC = () => {
       </header>
 
       <Grid size={12} className={styles.contactCover}>
-        <img src={contactmeCover} style={{width:'900px'}} />
+        <img src={contactmeCover}/>
         <Typography variant="h6" className={styles.subTitle} fontWeight={400}>
           Have some questions or just want to say hi? You can either text me or send me an e-mail,
         </Typography>
@@ -171,5 +171,3 @@ const ContactsPage: FC = () => {
     </Grid>
   )
 }
-
-export default ContactsPage;

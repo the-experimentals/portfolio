@@ -3,7 +3,7 @@ import styles from './SkillsPage.module.scss';
 import { Box, Card, Divider, Grid, Tooltip, Typography } from '@mui/material';
 import { PORTFOLIO_DATA } from '../../data/PortfolioData';
 
-const SkillsPage: FC = () => (
+export const SkillsPage: FC = () => (
   <Grid size={12} container className={styles.SkillsPage} data-testid="SkillsPage">
     <header>
       <Typography variant="h2" className={styles.title} fontWeight={400}>
@@ -39,5 +39,3 @@ const SkillsPage: FC = () => (
       </Grid>
   </Grid>
 );
-
-export default SkillsPage;

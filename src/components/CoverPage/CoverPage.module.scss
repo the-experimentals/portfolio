@@ -4,37 +4,39 @@
     width: 100%;    
 
     .coverPageRow{
-        width:920px
-    }
+        width:920px;        
 
-    & .profileImage{
-        background: url('../../assets/profile-image.jpeg') center no-repeat;
-        background-size: cover;        
-        height: 480px;
-        width: 480px;
-        border-radius: 50%;
-        animation: zoomIn 1.2s, moveLeft 1.2s ease-in-out;
-        animation-fill-mode: forwards;
-        box-shadow: 5px 5px 20px var(--primary-color);
-        
-    }
+        & .profileImageCover{
+            width: 480px;
 
-    & .profileSummaryCover{
-        width: 460px;
-        position:absolute;
-        right:0;
-        top:50%;
-        transform:translateY(-50%);
+            & .profileImage{                
+                width: 100%;
+                border-radius: 50%;
+                animation: zoomIn 1.2s, moveLeft 1.2s ease-in-out;
+                animation-fill-mode: forwards;
+                box-shadow: 5px 5px 20px var(--primary-color);
+                
+            }
+        }
 
-
-        & .profileSummary{        
-            margin-left: 2rem;
-            animation: moveRight, floating;
-            animation-duration: 1.2s, 4s;
-            animation-delay: 0s, 1.2s;
-            animation-iteration-count: 1, infinite;
+        & .profileSummaryCover{
+            width: 460px;
+            position:absolute;
+            right:0;
+            top:50%;
+            transform:translateY(-50%);
+    
+    
+            & .profileSummary{        
+                margin-left: 2rem;
+                animation: moveRight, floating;
+                animation-duration: 1.2s, 4s;
+                animation-delay: 0s, 1.2s;
+                animation-iteration-count: 1, infinite;
+            }
         }
     }
+
 
     @keyframes zoomIn {
         0% {    
@@ -75,5 +77,40 @@
             transform: translatey(0px);
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    .CoverPage {
+        & .coverPageRow{            
+            width: 100%;
+            padding: 1rem;
+          
+            & .profileImageCover{        
+                position: relative;        
+                top: 0;
+                left: 0;
+                transform: none;
+                & .profileImage{
+                    width: 100%;                    
+                    animation: none;
+                }
+            }
+
+            & .profileSummaryCover{
+                position: relative;
+                top: 0;
+                transform: none;
+                width: 100%;
+                margin-top: 2rem;                
+                & .profileSummary{        
+                    margin-left: 0;
+                    animation: none;
+                }
+            }
+        }
+
+        
+    }
+    
 }
 
