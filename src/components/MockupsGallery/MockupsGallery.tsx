@@ -15,7 +15,7 @@ export const MockupsGallery: FC = () => {
           Mockups Gallery
         </Typography>
         <Typography variant="h6" className={styles.subTitle} fontWeight={400}>
-          Sone of mockups on which I worked.
+          Some of mockups on which I worked.
         </Typography>
       </header>
 
