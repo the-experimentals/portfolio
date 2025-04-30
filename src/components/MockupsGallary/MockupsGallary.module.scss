@@ -1,11 +1,11 @@
-.MockupsGalary {
+.MockupsGallary {
     padding: 50px 60px;
 
-    & .galaryFrameCover{
+    & .gallaryFrameCover{
         height:100vh;
         margin-top:3rem;
 
-        & .galaryFrame{
+        & .gallaryFrame{
             height: 100%;
             width: 100%;
             border: none;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 768px){
-    .MockupsGalary{
+    .MockupsGallary{
         padding: 10px;
         margin-top: 6rem;
     }

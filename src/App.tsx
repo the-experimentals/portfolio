@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material"
 import styles from './App.module.scss'
-import { WorkExperiencePage, CoverPage, ProjectsPage, SkillsPage, ContactsPage, MockupsGalary } from "./components"
+import { WorkExperiencePage, CoverPage, ProjectsPage, SkillsPage, ContactsPage, MockupsGallary } from "./components"
 
 const App = () => {
   return(
@@ -9,7 +9,7 @@ const App = () => {
       <WorkExperiencePage/>      
       <ProjectsPage/>
       <SkillsPage/>
-      <MockupsGalary/>
+      <MockupsGallary/>
       <ContactsPage/>
       <Grid size={12} sx={{padding:'20px 30px'}}>
         <Typography variant="subtitle2" component="h1" sx={{textAlign:'center'}}>
