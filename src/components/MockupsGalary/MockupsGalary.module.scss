@@ -1,0 +1,23 @@
+.MockupsGalary {
+    padding: 50px 60px;
+
+    & .galaryFrameCover{
+        height:100vh;
+        margin-top:3rem;
+
+        & .galaryFrame{
+            height: 100%;
+            width: 100%;
+            border: none;
+            border-radius: 0.25rem;
+            background-color: var(--background-color);
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .MockupsGalary{
+        padding: 10px;
+        margin-top: 6rem;
+    }
+}
