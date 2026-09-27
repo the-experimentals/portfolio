@@ -6,7 +6,9 @@ export interface WorkExperience {
     startDate: string,
     endDate: string,
     mode: string,
-    description: string[],
+    description: string,
     icon: IconProp,
     location: string,
+    techSkills: string[]
+    companyLogo: string
 }
